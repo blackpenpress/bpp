@@ -3,15 +3,21 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 
+
+
 class PageTemplate extends Component {
   render() {
     const currentPage = this.props.data.wordpressPage
 
     return (
       <Layout>
-        <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
         
-        <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
+          <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
+          
+          <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
+
+    
+
       </Layout>
       
     )

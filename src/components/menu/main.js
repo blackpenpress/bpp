@@ -13,11 +13,22 @@ class Menu extends Component {
         return (
 
             <div>
-                <h1>Menu</h1>
                 
-                <ul>
+                <ul
+                css={{
+                                display: 'inline',
+                                float: 'left',
+                                width: '100%',
+                            }}>
                     {data.map((item) => 
-                            <li key={item.object_slug}>
+                            <li 
+                            css={{
+                                display: 'inline',
+                                float: 'left',
+                                listStyle: 'none',
+                                marginRight: '10px',
+                            }}
+                            key={item.object_slug}>
 
                                 <Link to={item.object_slug}>{item.title} </Link>
 

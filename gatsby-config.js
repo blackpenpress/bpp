@@ -7,7 +7,6 @@ module.exports = {
     `gatsby-plugin-glamor`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-page-transitions`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
